@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'edu.frc.vitruvianlib'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.User:Repo:Tag'
+    
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
